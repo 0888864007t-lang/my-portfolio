@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên hệ - Nguyễn Thanh Tuấn</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên hệ - Nguyễn Thanh Tuấn</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Trang chủ</a>
-        <a href="about.html">Giới thiệu</a>
-        <a href="contact.html">Liên hệ</a>
-    </nav>
-    <header>
-        <h1>Liên hệ</h1>
-        <p>Email: <a href="mailto:tuanreal11s@gmail.com" style="color:white">tuanreal11s@gmail.com</a></p>
-    </header>
+  <nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="about.html">Giới thiệu</a>
+    <a href="projects.html">Dự án</a>
+    <a href="contact.html" aria-current="page">Liên hệ</a>
+    <button id="theme-toggle" type="button" aria-label="Chuyển chế độ sáng/tối">🌙 Tối</button>
+  </nav>
+  <header class="hero">
+    <img class="avatar" src="images/avatar.jpg" alt="Ảnh Nguyễn Thanh Tuấn" onerror="this.outerHTML='<div class=&quot;avatar&quot; aria-label=&quot;Ảnh đại diện&quot;>T</div>'">
+    <h1>Liên hệ</h1>
+    <p>Email: <a href="mailto:tuanreal11s@gmail.com" style="color:inherit">tuanreal11s@gmail.com</a></p>
+  </header>
+  <main>
+    <h2 class="reveal">Gửi tin nhắn</h2>
+    <form class="reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label>Họ và tên <input type="text" name="name" required autocomplete="name"></label>
+      <label>Email <input type="email" name="email" required autocomplete="email"></label>
+      <label>Nội dung <textarea name="message" rows="5" required></textarea></label>
+      <button class="btn" type="submit">Gửi tin nhắn</button>
+    </form>
+  </main>
+  <footer>© 2026 Nguyễn Thanh Tuấn · tuanreal11s@gmail.com</footer>
 </body>
 </html>

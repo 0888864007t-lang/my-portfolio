@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới thiệu - Nguyễn Thanh Tuấn</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới thiệu - Nguyễn Thanh Tuấn</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Trang chủ</a>
-        <a href="about.html">Giới thiệu</a>
-        <a href="contact.html">Liên hệ</a>
-    </nav>
-    <header>
-        <h1>Giới thiệu</h1>
-        <p>Sinh viên ngành Công nghệ Thông tin</p>
-    </header>
-    <section>
-        <div class="project">Mình là Nguyễn Thanh Tuấn, sinh viên ngành Công nghệ Thông tin. Mình đang học HTML, CSS, JavaScript và muốn trở thành Full-stack Developer.</div>
-    </section>
+  <nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="about.html" aria-current="page">Giới thiệu</a>
+    <a href="projects.html">Dự án</a>
+    <a href="contact.html">Liên hệ</a>
+    <button id="theme-toggle" type="button" aria-label="Chuyển chế độ sáng/tối">🌙 Tối</button>
+  </nav>
+  <header class="hero">
+    <img class="avatar" src="images/avatar.jpg" alt="Ảnh Nguyễn Thanh Tuấn" onerror="this.outerHTML='<div class=&quot;avatar&quot; aria-label=&quot;Ảnh đại diện&quot;>T</div>'">
+    <h1>Giới thiệu</h1>
+    <p>Sinh viên ngành Công nghệ Thông tin</p>
+  </header>
+  <main>
+    <h2 class="reveal">Về mình</h2>
+    <div class="card reveal"><p>Mình là Nguyễn Thanh Tuấn, sinh viên ngành Công nghệ Thông tin. Mình đang học HTML, CSS, JavaScript và Git, và muốn trở thành Full-stack Developer.</p></div>
+  </main>
+  <footer>© 2026 Nguyễn Thanh Tuấn · tuanreal11s@gmail.com</footer>
 </body>
 </html>
